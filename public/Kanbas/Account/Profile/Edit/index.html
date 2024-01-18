@@ -6,18 +6,45 @@
 
 <body>
     <h1>Jose Annunziato</h1>
-        <label for="profile-name">Name:*</label>
-        <input type="text" id="profile-name" value="Jose Annunziato" />
-        <label for="profile-pronouns">Pronouns:</label>
-        <select>
-            <option id="pronoun-none">None</option>
-        </select><br/><br />
-        <label for="profile-title">Title:</label>
-        <input type="text" id="profile-title" />
-        <h2>Contact</h2>
-        <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
-        <h2>Biography</h2>
-        <h2>Links</h2>
+    <label for="profile-name">Name:*</label>
+    <input type="text" id="profile-name" value="Jose Annunziato" />
+    <label for="profile-pronouns">Pronouns:</label>
+    <select>
+        <option id="pronoun-none">None</option>
+    </select><br /><br />
+    <label for="profile-title">Title:</label>
+    <input type="text" id="profile-title" />
+    <h2>Contact</h2>
+    <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+    <h2>Biography</h2>
+    <label for="biography">Faculty, Software Engnieer, AI, Space, and renewables enthusiast.</label><br />
+    <textarea id="biography" cols="100%">Faculty, Software Engnieer, AI, Space, and renewables enthusiast.</textarea>
+    <h2>Links</h2>
+    <ul>
+        <li style="color: blue;"><a href="https://www.youtube.com/c/JoseAnnunziato">YouTube</a> Links to an external
+            site.</li>
+    </ul>
+    <table>
+        <tr>
+            <td valign="top">
+                <h3 align="center">Title</h3>
+                <input type="text" id="title" />
+            </td>
+            <td valign="top">
+                <h3 align="center">URL</h3>
+                <input type="text" id="url" />
+            </td>
+            <td>
+                <br /><br />
+                <a href="#">Remove</a>
+            </td>
+        </tr>
+    </table>
+    <button type="button">Add another link</button><br />
+    <a href="/Kanbas/Account/Profile/screen.html"><button type="button">Cancel</button></a>
+    <button type="button">Save Profile</button><br />
+    <button type="button">Edit Profile</button>
+    <button type="button">Cancel Editing</button>
 </body>
 
 </html>
