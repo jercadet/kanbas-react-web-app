@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Courses Home</title>
+  <title>Courses</title>
   <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
   <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/Kanbas/styles.css" />
@@ -11,6 +11,14 @@
 </head>
 
 <body>
+  <div class="wd-small-header d-md-none d-flex justify-content-around align-items-center">
+    <a href="/Kanbas/Courses/Home/kanbas-nav.html"><i class="fa fa-bars"></i></a>
+    <div class="text-center">
+      <h4>CS4550.78421.879543</h4>
+      <p>Modules</p>
+    </div>
+    <a href="/Kanbas/Courses/Home/course-nav.html"><i class="fa fa-chevron-down"></i></a>
+  </div>
   <div class="d-flex">
     <div class="d-none d-md-block">
       <ul class="wd-kanbas-navigation">
@@ -74,14 +82,14 @@
       </ul>
     </div>
     <div class="flex-fill mx-5 my-4">
-      <div>
-        <button type="button">Collapse All</button>
-        <button type="button">View Progress</button>
-        <select>
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-secondary me-2">Collapse All</button>
+        <button type="button" class="btn btn-secondary me-2">View Progress</button>
+        <select id="select-publish-all" class="btn btn-secondary me-2">
           <option value="publish-all">Publish All</option>
         </select>
-        <button type="button" style="background-color: red; color: white;">+ Module</button>
-        <button type="button"><i class="fa fa-ellipsis-v"></i></button>
+        <button type="button" class="btn btn-danger me-2">+ Module</button>
+        <button type="button" class="btn btn-secondary me-2"><i class="fa fa-ellipsis-v"></i></button>
       </div>
       <hr />
       <ul class="list-group wd-modules">
@@ -281,20 +289,20 @@
         </li>
       </ul>
     </div>
-    <div class="flex-grow-0 me-3 d-none d-lg-block wd-course-status" style="width: 250px">
+    <div class="btn-toolbar flex-grow-0 me-3 d-none d-lg-block wd-course-status" role="toolbar" style="width: 250px">
       <h3>Course Status</h3>
-      <div class="mb-2">
-        <button type="button">Unpublish</button>
-        <button type="button">Published</button>
+      <div class="d-flex mb-2">
+        <button type="button" class="btn btn-secondary">Unpublish</button>
+        <button type="button" class="btn btn-success">Published</button>
       </div>
-      <div class="pb-3">
-        <a href="#"><button type="button">Import Existing Content</button></a>
-        <a href="#"><button type="button">Import From Content</button></a>
-        <a href="#"><button type="button">Choose Home Page</button></a>
-        <a href="#"><button type="button">View Course Stream</button></a>
-        <a href="#"><button type="button">New Announcement</button></a>
-        <a href="#"><button type="button">New Analytics</button></a>
-        <a href="#"><button type="button">View Course Notification</button></a>
+      <div class="text-start pb-3">
+        <a href="#"><button type="button" class="btn btn-secondary">Import Existing Content</button></a>
+        <a href="#"><button type="button" class="btn btn-secondary">Import From Content</button></a>
+        <a href="#"><button type="button" class="btn btn-secondary">Choose Home Page</button></a>
+        <a href="#"><button type="button" class="btn btn-secondary">View Course Stream</button></a>
+        <a href="#"><button type="button" class="btn btn-secondary">New Announcement</button></a>
+        <a href="#"><button type="button" class="btn btn-secondary">New Analytics</button></a>
+        <a href="#"><button type="button" class="btn btn-secondary">View Course Notification</button></a>
       </div>
       <div>
         <div class="flex justify-content-between">
@@ -304,13 +312,13 @@
         </div>
         <ul>
           <li>
-            <a href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a>
+            <p><a href="#">Lecture</a><br />CS4550.12631.202410<br />Sep 7 at 11:45am</p>
           </li>
           <li>
-            <a href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a>
+            <p><a href="#">Lecture</a><br />CS4550.12631.202410<br />Sep 11 at 11:45am</p>
           </li>
           <li>
-            <a href="#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a>
+            <p><a href="#">CS5610 06 SP23 Lecture</a><br />Sep 11 at 6pm</p>
           </li>
         </ul>
       </div>

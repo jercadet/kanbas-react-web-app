@@ -39,3 +39,24 @@
   color: red;
   text-decoration: none;
 }
+
+.wd-small-header {
+  background-color: black;
+  color: white;
+}
+
+.wd-small-header i {
+  color: white;
+  text-decoration: none;
+}
+
+.wd-course-status button {
+  width: 100%;
+  text-align: left;
+}
+
+.wd-small-kanbas-navigation a {
+  color: red;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
