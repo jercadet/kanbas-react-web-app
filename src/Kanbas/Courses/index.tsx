@@ -8,7 +8,6 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import "./index.css"
 import { useState } from "react";
-import path from "path";
 
 function Courses() {
     const { courseId } = useParams();
