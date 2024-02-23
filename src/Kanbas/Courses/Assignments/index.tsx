@@ -10,12 +10,10 @@ function Assignments() {
     return (
         <>
             <div className="d-flex">
-                <input type="text" name="search" className="form-floating" id="search-assignment" placeholder="Search Assignments" />
-                <div>
-                    <button type="button" className="btn btn-secondary">+ Group</button>
-                    <button type="button" className="btn btn-danger">+ Assignment</button>
-                    <button type="button" className="btn btn-secondary"><FaEllipsisV /></button>
-                </div>
+                <input type="text" name="search" id="search-assignment" className="me-2" placeholder="Assignment Name" />
+                <button type="button" className="btn btn-secondary me-2 h-50">+ Group</button>
+                <button type="button" className="btn btn-danger me-2 h-50">+ Assignment</button>
+                <button type="button" className="btn btn-secondary me-2 h-50"><FaEllipsisV /></button>
             </div>
             <hr />
             <ul className="list-group">
@@ -28,8 +26,8 @@ function Assignments() {
                         </span>
                     </div>
                     <ul className="list-group pt-2">
-                        {assignmentList.map((assignment) => (
-                            <li className="list-group-item">
+                        {assignmentList.map((assignment, index) => (
+                            <li key={index} className="list-group-item">
                                 <FaEllipsisV className="me-2" />
                                 <Link
                                     to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}>{assignment.title}</Link>

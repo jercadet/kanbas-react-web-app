@@ -20,8 +20,8 @@ function ModuleList() {
                 <button type="button" className="btn btn-secondary me-2"><FaEllipsisV /></button>
             </div>
             <hr />
-            {modulesList.map((module) => (
-                <ul className="list-group">
+            {modulesList.map((module, index) => (
+                <ul key={index} className="list-group">
                     <li
                         className="list-group-item list-group-item-secondary mb-4"
                         onClick={() => setSelectedModule(module)}>
@@ -38,8 +38,8 @@ function ModuleList() {
                         </div>
                         {selectedModule._id === module._id && (
                             <ul className="list-group pt-2">
-                                {module.lessons?.map((lesson) => (
-                                    <li className="list-group-item">
+                                {module.lessons?.map((lesson, index) => (
+                                    <li key={index} className="list-group-item">
                                         <FaEllipsisV className="me-2" />
                                         {lesson.name}
                                         <span className="float-end">
