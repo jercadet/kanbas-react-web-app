@@ -1,5 +1,4 @@
-import { FaTachometerAlt, FaRegUserCircle, FaBook, FaRegCalendarAlt, FaEnvelope, FaClock, FaToggleOff, FaUniversalAccess, FaQuestionCircle } from "react-icons/fa";
-import { useLocation } from "react-router";
+import { FaTachometerAlt, FaRegUserCircle, FaBook, FaRegCalendarAlt, FaEnvelope, FaClock, FaToggleOff, FaUniversalAccess, FaQuestionCircle, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./index.css";
 
@@ -15,16 +14,17 @@ function KanbasSmallNav() {
         { label: "Commons", icon: <FaUniversalAccess className="fs-2" /> },
         { label: "Help", icon: <FaQuestionCircle className="fs-2" /> }
     ];
-    const { pathname } = useLocation();
     return (
-        <ul className="wd-small-kanbas-navigation">
-            {/* position-absolute top-50 start-50 translate-middle d-flex flex-column fs-1 */}
-            {links.map((link, index) => (
-                <li key={index}>
-                    <Link to={`/Kanbas/${link.label}`}> {link.icon} {link.label} </Link>
-                </li>
-            ))}
-        </ul>
+        <>
+        <button className="btn btn-link text-decoration-none text-black position-absolute end-0 me-5 mt-5"><FaTimes /></button>
+            <ul className="text-decoration-none wd-small-kanbas-navigation position-absolute top-50 start-50 translate-middle d-flex flex-column fs-1 d-md-none">
+                {links.map((link, index) => (
+                    <li key={index}>
+                        <Link to={`/Kanbas/${link.label}`}> {link.icon} {link.label} </Link>
+                    </li>
+                ))}
+            </ul>
+        </>
     );
 }
 

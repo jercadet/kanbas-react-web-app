@@ -24,3 +24,9 @@
     text-align: left;
     font-size: small;
 }
+
+.wd-small-kanbas-navigation a {
+    color: red;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
