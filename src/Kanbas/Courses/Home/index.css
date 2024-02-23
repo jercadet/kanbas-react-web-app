@@ -1,0 +1,26 @@
+.wd-course-status {
+    width: 250px;
+}
+
+.wd-course-status a {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-course-status button {
+    width: 250px;
+    text-align: left;
+}
+
+.wd-course-status-to-do button {
+    color: red;
+    text-decoration: none;
+    text-align: left;
+}
+
+.wd-course-status-to-do span {
+    color: gray;
+    text-decoration: none;
+    text-align: left;
+    font-size: small;
+}
