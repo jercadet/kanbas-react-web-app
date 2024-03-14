@@ -11,6 +11,7 @@ import { useState } from "react";
 function Courses({ courses }: { courses: any[]; }) {
     const { courseId } = useParams();
     const course = courses.find((course) => course._id === courseId);
+    console.log(course);
     const [kanbasNavToggle, setKanbasNavToggle] = useState(false);
     const [courseNavToggle, setCourseNavToggle] = useState(false);
 
