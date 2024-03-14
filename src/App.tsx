@@ -9,7 +9,7 @@ import { Routes, Route, Navigate } from "react-router";
 function App() {
   return (
     <HashRouter>
-      <div className="m-3">
+      <div className="mb-3 me-3">
         <Routes>
           <Route path="/" element={<Navigate to="/Labs" />} />
           <Route path="/Labs/*" element={<Labs />} />

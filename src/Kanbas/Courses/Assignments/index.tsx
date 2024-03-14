@@ -3,6 +3,7 @@ import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
 
+
 function Assignments() {
     const { courseId } = useParams();
     const assignmentList = assignments.filter(
@@ -10,10 +11,12 @@ function Assignments() {
     return (
         <>
             <div className="d-flex">
-                <input type="text" name="search" id="search-assignment" className="me-2" placeholder="Assignment Name" />
-                <button type="button" className="btn btn-secondary me-2 h-50">+ Group</button>
-                <button type="button" className="btn btn-danger me-2 h-50">+ Assignment</button>
-                <button type="button" className="btn btn-secondary me-2 h-50"><FaEllipsisV /></button>
+                <input type="text" name="search" id="search-assignment" className="flex-fill me-2" placeholder="Assignment Name" />
+                <div className="d-inline-flex">
+                    <button type="button" className="btn btn-secondary me-2">+ Group</button>
+                    <button type="button" className="btn btn-danger me-2">+ Assignment</button>
+                    <button type="button" className="btn btn-secondary me-2"><FaEllipsisV /></button>
+                </div>
             </div>
             <hr />
             <ul className="list-group">
