@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "RS101",
+        "name": "Trucks",
+        "number": "CS9000",
+        "startDate": "2023-01-10",
+        "endDate": "2023-05-15",
+        "image": "bluechevy.jpg"
+    },
+    {
+        "_id": "RS102",
+        "name": "World Geometry",
+        "number": "POL2350",
+        "startDate": "2023-01-10",
+        "endDate": "2023-05-15",
+        "image": "kermit.jpg"
+    },
+    {
+        "_id": "RS103",
+        "name": "Flying Cars",
+        "number": "RS2101",
+        "startDate": "2023-01-10",
+        "endDate": "2023-05-15",
+        "image": "car.jpeg"
+    }
+]

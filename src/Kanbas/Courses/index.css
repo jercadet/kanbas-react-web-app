@@ -1,0 +1,19 @@
+.wd-courses-header {
+    color: red;
+}
+
+.wd-small-header {
+    background-color: black;
+    color: white;
+}
+
+.wd-small-header i {
+    color: white;
+    text-decoration: none;
+}
+
+.wd-small-kanbas-navigation a {
+    color: red;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
